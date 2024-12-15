@@ -8,9 +8,9 @@ const port = 3000;
 app.use(bodyParser.json());
 
 // Replace with Hugging Face or OpenAI API endpoint and key
-const huggingFaceAPIUrl = 'https://api-inference.huggingface.co/models/gpt2';
-const openAIAPIUrl = 'https://api.openai.com/v1/completions';
-const openAIAPIKey = 'your-openai-api-key'; // Set your OpenAI API Key here
+const huggingFaceAPIUrl = 'https://huggingface.co/google/gemma-2-2b-it';
+const openAIAPIUrl = 'https://djfhg-google-gemma-2-2b-it.hf.space/?__theme=dark';
+const openAIAPIKey = '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'; // Set your OpenAI API Key here
 
 // POST endpoint to generate text
 app.post('/generate-text', async (req, res) => {
